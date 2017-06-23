@@ -1,11 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "User signing in" do
-  before do
-    @user = User.create(email: "example@gmail.com",
-                        password: "password",
-                        password_confirmation: "password")
-  end
+  before { @user = create(:user) }
 
   scenario "successfully" do
     sign_in @user

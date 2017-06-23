@@ -32,6 +32,9 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = false
 
+  # Needed for factory_girl_rails gem
+  config.include FactoryGirl::Syntax::Methods
+
   # Add database_cleaner
 
   config.before(:suite) do
