@@ -1,5 +1,5 @@
-<% @posts.each do |post| %>
-  <%= post.title %>
-  <%= post.body %>
+<div class="post-panel">
+  <%= avatar_for(post.user, size: 40) %>
   <%= post.username %>
-<% end %>
+  <h3><%= post.body %></h3>
+</div>
